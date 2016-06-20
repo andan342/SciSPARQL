@@ -25,20 +25,20 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 
 ### Step-by-step instructions
 
-- download and unpack StreamAnalyze Amos
+1. Download and unpack StreamAnalyze Amos
 (latest version [here](http://user.it.uu.se/~torer/download/sa.amosWindows.zip))
 
-- set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`
+1. Set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`
 
-- download and unpack [SciSPARQL-sa.amos-headers.zip](http://user.it.uu.se/~andan342/SciSPARQL-sa.amos-headers.zip) to `%AMOS_HOM%E`
+1- Download and unpack [SciSPARQL-sa.amos-headers.zip](http://user.it.uu.se/~andan342/SciSPARQL-sa.amos-headers.zip) to `%AMOS_HOM%E`
 
-- clone this repository to `SciSPARQL` directory under `%AMOS_HOME%`
+1- Clone this repository to `SciSPARQL` directory under `%AMOS_HOME%`
 
-- make sure Visual Studio's `msdev.exe` and `%AMOS_HOME%\bin` are in the system `PATH`
+1. Make sure Visual Studio's `msdev.exe` and `%AMOS_HOME%\bin` are in the system `PATH`
 
-- under `%AMOS_HOME%\SciSPARQL` run `compile6.cmd` and then `mkdmp.cmd`
+1. Under `%AMOS_HOME%\SciSPARQL` run `compile6.cmd` and then `mkdmp.cmd`
 
-- use `ssdm` command to run **Scientific SPARQL Database Manager**
+1. Use `ssdm` command to run **Scientific SPARQL Database Manager**
 
 
 
