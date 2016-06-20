@@ -16,7 +16,8 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 
 ### Prerequisites
 
-- Microsoft Windows 7 or 8
+- Microsoft Windows 7 or 8  
+*Deployment under Windows 10 is not tested - compatibility reports welcome*
 
 - Microsoft Visual C++ 6.0  
 *Visual Studio 2015 will be supported in the near future*
