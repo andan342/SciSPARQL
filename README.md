@@ -30,9 +30,9 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 
 1. Set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`
 
-1- Download and unpack [SciSPARQL-sa.amos-headers.zip](http://user.it.uu.se/~andan342/SciSPARQL-sa.amos-headers.zip) to `%AMOS_HOM%E`
+1. Download and unpack [SciSPARQL-sa.amos-headers.zip](http://user.it.uu.se/~andan342/SciSPARQL-sa.amos-headers.zip) to `%AMOS_HOM%E`
 
-1- Clone this repository to `SciSPARQL` directory under `%AMOS_HOME%`
+1. Clone this repository to `SciSPARQL` directory under `%AMOS_HOME%`
 
 1. Make sure Visual Studio's `msdev.exe` and `%AMOS_HOME%\bin` are in the system `PATH`
 
