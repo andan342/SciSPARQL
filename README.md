@@ -29,7 +29,7 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 1. Download and unpack StreamAnalyze Amos
 (latest version [here](http://user.it.uu.se/~torer/download/sa.amosWindows.zip))
 
-1. Set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`
+1. Set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`, and add `%AMOS_HOME%\bin` into the `PATH` variable
 
 1. Download and unpack [SciSPARQL-sa.amos-headers.zip](http://user.it.uu.se/~andan342/SciSPARQL-sa.amos-headers.zip) to `%AMOS_HOM%E`
 
