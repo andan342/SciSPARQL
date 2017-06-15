@@ -19,15 +19,15 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 - Microsoft Windows 7 or 8  
 *Deployment under Windows 10 is not tested - compatibility reports welcome*
 
-- Microsoft Visual C++ 6.0  
-*Visual Studio 2015 will be supported in the near future*
+- Microsoft Visual Studio 2015
+*Compatibilit reports with later versions of Visual Studio welcome*
 
 - StreamAnalyze Amos
 
 ### Step-by-step instructions
 
 1. Download and unpack StreamAnalyze Amos
-(latest version [here](http://user.it.uu.se/~torer/download/sa.amosWindows.zip))
+(latest version [here](https://streamanalyze.com/sa-amos/))
 
 1. Set environment variable `AMOS_HOME` to the root of the the unpacked `sa.amos`, and add `%AMOS_HOME%\bin` into the `PATH` variable
 
@@ -37,7 +37,7 @@ Scientific SPARQL Database Manager is the prototype system that implements SciSP
 
 1. Make sure Visual Studio's `msdev.exe` and `%AMOS_HOME%\bin` are in the system `PATH`
 
-1. Under `%AMOS_HOME%\SciSPARQL` run `compile6.cmd` and then `mkdmp.cmd`
+1. Under `%AMOS_HOME%\SciSPARQL` run `compile.cmd` and then `mkdmp.cmd`
 
 1. Use `ssdm` command to run **Scientific SPARQL Database Manager**
 
