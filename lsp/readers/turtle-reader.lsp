@@ -256,6 +256,8 @@
 
 ;;;POSTPROCESSING OPTIONS - should be moved to a separate file if >1 RDF readers are enabled
 
+(unless _emit_strings_
+
 (defun set_RDF_adapters- (fno adapters)
   "Put wrapping calls to RDF adapters around the reader functions"
   (let ((left (strings-to-string (arraytolist adapters) "" "" "(")) (right ""))
@@ -265,6 +267,8 @@
 (osql "create function set_RDF_adapters(Vector of Charstring adapters) -> Boolean as foreign 'set_RDF_adapters-';")
 
 (osql "set_RDF_adapters({});")
+
+) ;; of !_emit_strings_
 
 ;;;ARRAYS
 

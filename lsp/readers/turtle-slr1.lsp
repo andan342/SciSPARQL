@@ -44,7 +44,7 @@
          (RIGHT-BRACKET-16.1
            (selectq (car input)
             ((STRING NUMBER MINUS TRUE FALSE URI PREF URI-TAIL A UNDERSCORE LEFT-BRACKET LEFT-PAR RIGHT-BRACKET SEMICOLON DOT RIGHT-PAR COMMA) ; REDUCE(16) op
-              (setq input (cons '<RDF-TERM> (apply #'(LAMBDA (A B) (GEN-BLANK DATA)) (reduce 2)))))
+              (setq input (cons '<RDF-TERM> (apply #'(LAMBDA (A B) (GEN-BLANK)) (reduce 2)))))
             (return (list 'SYNTAX-ERROR (caar stack) '(STRING NUMBER MINUS TRUE FALSE URI PREF URI-TAIL A UNDERSCORE LEFT-BRACKET LEFT-PAR RIGHT-BRACKET SEMICOLON DOT RIGHT-PAR COMMA) input))))
          (<RDF-TERM>-8.1
            (selectq (car input)
@@ -59,7 +59,7 @@
          (RIGHT-BRACKET-15.1
            (selectq (car input)
             ((COMMA STRING NUMBER MINUS TRUE FALSE URI PREF URI-TAIL A LEFT-PAR LEFT-BRACKET UNDERSCORE RIGHT-PAR RIGHT-BRACKET SEMICOLON DOT) ; REDUCE(15) op
-              (setq input (cons '<BRACKETED-PROP-LIST> (apply #'(LAMBDA (A B C) (LET ((RES (GEN-BLANK DATA))) (EMIT-TRIPLES DATA RES B) RES)) (reduce 3)))))
+              (setq input (cons '<BRACKETED-PROP-LIST> (apply #'(LAMBDA (A B C) (LET ((RES (GEN-BLANK))) (EMIT-TRIPLES DATA RES B) RES)) (reduce 3)))))
             (return (list 'SYNTAX-ERROR (caar stack) '(COMMA STRING NUMBER MINUS TRUE FALSE URI PREF URI-TAIL A LEFT-PAR LEFT-BRACKET UNDERSCORE RIGHT-PAR RIGHT-BRACKET SEMICOLON DOT) input))))
          (<RDF-TERM>-19.1
            (selectq (car input)

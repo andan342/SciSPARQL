@@ -73,8 +73,8 @@
 
 			       (<rdf-term> -> <bracketed-prop-list> 1)
 			       (<bracketed-prop-list> -> left-bracket <pred-obj-list> right-bracket ;14
-						      #'(lambda (a b c) (let ((res (gen-blank data))) (emit-triples data res b) res))) 
-			       (<rdf-term> -> left-bracket right-bracket #'(lambda (a b) (gen-blank data))) ;15
+						      #'(lambda (a b c) (let ((res (gen-blank))) (emit-triples data res b) res))) 
+			       (<rdf-term> -> left-bracket right-bracket #'(lambda (a b) (gen-blank))) ;15
 
 			       (<rdf-term> -> left-par <rdf-terms> right-par #'(lambda (a b c) (nreverse b)))
 			       (<rdf-terms> -> #'(lambda () nil))
