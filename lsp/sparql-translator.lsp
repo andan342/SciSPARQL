@@ -1073,7 +1073,7 @@
     (setq select-tr (strings-to-string (mapcar (f/l (e) (sparql-expr-to-amosql e ed -1 resolve))
 					       select) "" ", " ""))
     (setq select-group-tr (strings-to-string (sparql-vars-to-amosql select-group ed) "" ", " ""))
-    (when (and (cdr select-group) (cdr select)) ;TODO: maybe (and ... select)
+    (when (and (cdr select-group) select)
       (setq select-group-tr (concat "{" select-group-tr "}")))
     (concat select-group-tr (if (or (null select) (null select-group)) "" ", ") select-tr
 	    (if (and (null select) (string= select-group-tr "")) "true" "") ; select TRUE when both select lists are empty
